@@ -2,10 +2,11 @@ name: vote
 
 on:
   push:
+    paths:
+      - 'vote/**'
     branches:
       - "main"
-    paths:
-      - 'vote'
+    
 
 jobs:
   build:
