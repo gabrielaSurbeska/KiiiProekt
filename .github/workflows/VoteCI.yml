@@ -6,6 +6,7 @@ on:
       - "main"
     paths:
       - vote
+      
 jobs:
   build:
     runs-on: ubuntu-latest
