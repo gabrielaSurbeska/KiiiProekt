@@ -2,10 +2,10 @@ name: worker
 
 on:
   push:
+    paths:
+      - 'worker/**'
     branches:
       - "main"
-    paths:
-      - worker
 
 jobs:
   build:

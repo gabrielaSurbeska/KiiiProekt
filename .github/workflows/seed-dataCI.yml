@@ -2,9 +2,10 @@ name: seed-data
 
 on:
   push:
+    paths:
+      - 'seed-data/**'
     branches:
       - "main"
-    
 
 jobs:
   build:

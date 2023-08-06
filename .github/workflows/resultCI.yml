@@ -2,9 +2,10 @@ name: result
 
 on:
   push:
+    paths:
+      - 'result/**'
     branches:
       - "main"
-    
 
 jobs:
   build:
