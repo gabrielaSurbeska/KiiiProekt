@@ -6,7 +6,7 @@
 
 services:
   vote:
-    image: gabykiii/voteworkflows
+    image: dockersamples/examplevotingapp_vote
     depends_on:
       redis:
         condition: service_healthy 
@@ -17,7 +17,7 @@ services:
       - back-tier
 
   result:
-    image: gabykiii/resultworkflows
+    image: dockersamples/examplevotingapp_result
     depends_on:
       db:
         condition: service_healthy 
@@ -28,7 +28,7 @@ services:
       - back-tier
 
   worker:
-    image: gabykiii/workerworkflows
+    image: dockersamples/examplevotingapp_worker
     depends_on:
       redis:
         condition: service_healthy 
